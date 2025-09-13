@@ -307,6 +307,8 @@ Error message and password prompt
 
 <li>Enhavtabelo</li>
 
+<li>Export tiddlers as Zip file</li>
+
 <li>Gramatiko</li>
 
 <li>https://t.me/angla.org</li>
@@ -359,7 +361,7 @@ Error message and password prompt
 {"created":"20241217011656378","title":"$:/GitHub/Path","text":"/","modified":"20241217011854658"},
 {"created":"20241217010023274","title":"$:/GitHub/Repo","text":"LaPingvino/anglaorg-tiddlywiki","modified":"20241217010023274"},
 {"created":"20241217005316961","title":"$:/GitHub/Username","text":"lapingvino","modified":"20241217005318121"},
-{"title":"$:/Import","text":"La jenaj tiddler-oj estis importitaj:\n\n# [[$:/plugins/tidme/stats]]","status":"complete"},
+{"title":"$:/Import","text":"La jenaj tiddler-oj estis importitaj:\n\n# [[Export tiddlers as Zip file]]","status":"complete"},
 {"title":"$:/isEncrypted","text":"no"},
 {"title":"$:/JMH/ui/Buttons/DownloadWiki","tags":"$:/tags/PageControls","text":"\u003C$button class=\"tc-btn-invisible\">\n\u003C$action-sendmessage $message=\"tm-download-file\"/>\n{{$:/core/images/download-button}}\n\u003C/$button>\n"},
 {"created":"20241216021215998","title":"$:/language","text":"$:/languages/eo","modified":"20241219012017282"},
@@ -406,7 +408,7 @@ Error message and password prompt
 {"created":"20241217014537923","title":"$:/state/toc/TableOfContents-Kursoj--232442599","text":"close","modified":"20241217014543284"},
 {"text":"yes","title":"$:/status/IsLoggedIn"},
 {"title":"$:/status/RequireReloadDueToPluginChange","text":"no"},
-{"created":"20250913165124155","title":"$:/StoryList","text":"","list":"$:/ControlPanel [[Pri Angla.org]] Kursoj","modified":"20250913165124155"},
+{"title":"$:/StoryList","created":"20250913165124155","text":"","list":"$:/Import $:/ControlPanel [[Pri Angla.org]] Kursoj","modified":"20250913165124155"},
 {"created":"20241216020918216","text":"","title":"$:/tags/MenuBar","list":"$:/plugins/tiddlywiki/menubar/items/hamburger $:/plugins/tiddlywiki/menubar/items/topleftbar $:/plugins/tiddlywiki/menubar/items/contents Laborgrupo [[Pri Angla.org]] $:/plugins/tiddlywiki/menubar/items/search $:/plugins/tiddlywiki/menubar/items/pagecontrols $:/plugins/tiddlywiki/menubar/items/server $:/plugins/tiddlywiki/menubar/items/toprightbar $:/plugins/tiddlywiki/menubar/items/sidebar","modified":"20250108234436881"},
 {"created":"20241216032825133","text":"","title":"$:/tags/SideBar","list":"Enhavtabelo $:/core/ui/SideBar/Open $:/core/ui/SideBar/Recent $:/core/ui/SideBar/Tools $:/core/ui/SideBar/More","modified":"20241217014642284"},
 {"created":"20241216015252388","title":"$:/theme","text":"$:/themes/tiddlywiki/snowwhite","modified":"20241217020627611"},
@@ -420,6 +422,7 @@ Error message and password prompt
 {"created":"20241216015517481","title":"$:/view","text":"classic","modified":"20241216015525083"},
 {"created":"20250108230649308","text":"Jen la paĝo kun ideoj por plu disvolvi angla.org por ke ĝi estu pli kaj pli bona.\n\n* Baza kurso\n* Ilo por hazardaj ekzercoj\n* Gramatika referenco\n* Enirpaĝo por neesperantistoj por kompreni kion fari ĉi tie\n\n(Se vi volas ludi per alia maniero prezenti la saman enhavon, mi metis version per TiddlyResearch en [ext[/research]], mi esperas ke vi ŝatos!)","tags":"Enhavtabelo","title":"Disvolvoplanoj","modified":"20250110225019346"},
 {"created":"20241216020220228","text":"\u003Cdiv class=\"tc-table-of-contents\">\n\n\u003C\u003Ctoc-selective-expandable 'Enhavtabelo'>>\n\n\u003C/div>","tags":"$:/tags/SideBar","title":"Enhavtabelo","modified":"20250108233112852","caption":"Enhavo","color":"LightSlateGrey","list":"Kursoj Gramatiko [[Vortaroj kaj frazaroj]] Disvolvoplanoj [[What is this website?]]"},
+{"created":"20200728083941254","text":"\\define renderContent()\n  \u003C$action-sendmessage $message=\"tm-zip-create\" $param=\"$:/temp/_ZipTiddler\"/>\n  \u003C$list filter={{$:/temp/advancedsearch}}>\n    \u003C$action-sendmessage $message=\"tm-zip-render-file\" $param=\"$:/temp/_ZipTiddler\" filename={{{ [\u003CcurrentTiddler>slugify[]addsuffix[.tid]] }}} tiddler=\u003C\u003CcurrentTiddler>> template=\"$:/core/templates/tid-tiddler\"/>\n  \u003C/$list>\n  \u003C$action-sendmessage $message=\"tm-zip-download\" $param=\"$:/temp/_ZipTiddler\" filename=\"tiddlers.zip\"/>\n\\end\n\n\u003C$button actions=\u003C\u003CrenderContent>>>\n  Export as Zip\n\u003C/$button>\n\n\u003C$macrocall $name=\"list-links\" filter={{$:/temp/export-as-zip-filter}}/>","title":"Export tiddlers as Zip file","modified":"20200728093449998","tags":"$:/tags/AdvancedSearch/FilterButton"},
 {"created":"20250108232906477","text":"Ĉi tie ni iom post iom metos supervidon de angla gramatiko por facila referenco.","tags":"Enhavtabelo","title":"Gramatiko","modified":"20250108232942126"},
 {"created":"20250109002014033","text":"","title":"https://t.me/angla.org","modified":"20250109002014033"},
 {"created":"20241217013708628","text":"Ĉi tiu retejo iom post iom provos oferti diversajn kursojn, laŭ viaj specifaj bezonoj.\n\n\u003Cdiv class=\"tc-table-of-contents\">\n\n\u003C\u003Ctoc-selective-expandable 'Kursoj'>>\n\n\u003C/div>","tags":"Enhavtabelo","title":"Kursoj","modified":"20241217015040517"},
