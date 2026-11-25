@@ -1,0 +1,18 @@
+{
+  "id": "/",
+  "name": "angla.org: angla kurso por esperantistoj",
+  "short_name": "angla.org",
+  "description": "Lernu la anglan per Esperanto: gramatiko, ekzercoj kaj prononco.",
+  "lang": "eo",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#2A3F8F",
+  "background_color": "#E6F2EE",
+  "icons": [
+    { "src": "/ikono-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/ikono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/ikono-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/ikono-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
