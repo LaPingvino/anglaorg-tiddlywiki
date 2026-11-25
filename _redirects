@@ -1,0 +1,11 @@
+# Cloudflare Pages redirects: the 2019–2021 Hugo URLs of angla.org.
+# The TiddlyWiki #Title permalinks need none: the titles are kept.
+/blogo/bonvenon/ /#Blogo%20-%20Bonvenon 301
+/blogo/kiel-lerni-lingvon/ /#Blogo%20-%20Kiel%20Lerni%20Lingvon 301
+/kurso/saluti/ /#Saluti 301
+/kurso/alfabeto-kaj-prononco/ /#Alfabeto%20kaj%20Prononco 301
+/blogo/forumo/ /#Blogo 301
+/blogo/ /#Blogo 301
+/kurso/ /#Kursoj 301
+/kontribui/ /#Pri%20Angla.org 301
+/etikedoj/* / 301
