@@ -8,7 +8,7 @@
 //     their stylesheet network first;
 //   - everything else, above all the editor's GitHub API calls and every
 //     non-GET request: never touched, never kept.
-const VERSION = "74ef1f6f7d9f";
+const VERSION = "97f15c6b36bd";
 const WIKI = "angla-" + VERSION;
 const FONTS = "angla-tiparoj";
 const PAGE = "/";
